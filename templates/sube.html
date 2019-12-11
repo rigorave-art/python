@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+      <link rel="stylesheet" href="../static/css/sube.css">
+  </head>
+  <body align="center">
+    <form method=post enctype=multipart/form-data action="/sube_archivo">
+      <h1>Graficar</h1>
+      <br>
+      <input type=file name=file>
+      <br>
+      <br>
+      <h3>Selecciona el tipo de grafica: </h3>
+      <select name="tipo" id="">
+        <option value="barras">barras</option>
+        <option value="pastel">pastel</option>
+        <option value="lineas">lineas</option>
+      </select>
+      <br>
+      <br>
+      <div class="input-field col s6">
+        <input placeholder="columna a graficar" name="x" type="text" class="validate">
+        <label for="first_name">Ingresa la Columna a Graficar</label>
+      </div>
+      <br>
+      <div class="input-field col s6">
+        <input placeholder="columna a graficar" name="y" type="text" class="validate">
+        <label for="first_name">Ingresa la otra Columna a Graficar</label>
+      </div>
+      <br>
+      <div class="input-field col s6">
+        <input placeholder="nombre de la grafica" name="nombre" type="text" class="validate">
+        <label for="first_name">Nombre de la grafica</label>
+      </div>
+      <br>
+      <br>
+      <input type=submit value=Upload id="boton">
+    </form>
+    
+    <!--<p>{{columnas}}</p>
+    {% for table in tables %}
+        {{ table|safe }}
+      {% endfor %}
+      <br>
+      <p>{{x}}</p> -->
+
+  </body>
+</html>
